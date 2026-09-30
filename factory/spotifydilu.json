@@ -1,0 +1,15 @@
+{
+	"name": "spotifydilu",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "uaenorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "33bb56c4-831d-4ee5-8958-05d2227b07b1",
+		"tenantId": "a4af85d3-4221-41e1-a4c3-07fd0f52eaba"
+	}
+}
