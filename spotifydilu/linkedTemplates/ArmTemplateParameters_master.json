@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "spotifydilu"
+		},
+		"ls_adls_accountKey": {
+			"value": ""
+		},
+		"lsd_azuresql_password": {
+			"value": ""
+		},
+		"ls_adls_properties_typeProperties_url": {
+			"value": "https://spotifydilu.dfs.core.windows.net/"
+		},
+		"lsd_azuresql_properties_typeProperties_server": {
+			"value": "azurespotify.database.windows.net"
+		},
+		"lsd_azuresql_properties_typeProperties_database": {
+			"value": "azuredpoyify"
+		},
+		"lsd_azuresql_properties_typeProperties_userName": {
+			"value": "admindilu"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
