@@ -110,7 +110,10 @@
 						"parameters": {
 							"container": "bronze",
 							"folder": "cdc",
-							"file": "cdc.json"
+							"file": {
+								"value": "@{pipeline().parameters.table}_cdc",
+								"type": "Expression"
+							}
 						}
 					},
 					"firstRowOnly": false
@@ -179,7 +182,7 @@
 										}
 									}
 								},
-								"enableLogging": true,
+								"enableLogging": false,
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
 									"recursive": true,
@@ -275,7 +278,10 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container": "bronze",
-										"folder": "cdc",
+										"folder": {
+											"value": "@{pipeline().parameters.table}_cdc",
+											"type": "Expression"
+										},
 										"file": "empty.json"
 									}
 								}
@@ -304,6 +310,9 @@
 				"type": "string"
 			},
 			"cdc_col": {
+				"type": "string"
+			},
+			"from_date": {
 				"type": "string"
 			}
 		},
